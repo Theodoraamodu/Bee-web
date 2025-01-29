@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+  <div id="container">            
+    <header>                    
+      <h1>The Bees</h1>
+      <div>
+        <img src="images/beecartoon.jpg" alt="Bee Image">
+      </div>
+      <p >Welcome to Theodora's Bees Game! Enter your name and answer the questions below.</p>
+   </header>
+
+   <nav>
+    <ul>
+      <li><a href="Home.html">Home of Bees</a></li>
+      <li><a href="Bees.html">All About Bees</a></li>
+      <li><a href="Game.html">Bee Questionnaire</a></li>
+    </ul>
+  </nav>
+  
+    <main>
+      <form id="gameForm" onsubmit="return calculateScore()">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" required><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" required><br><br>
+          
+          <div class="question">
+              <p>1. What colors are bees?</p>
+              <div class="answer">
+                  <input type="radio" id="color1" name="color" value="Black and yellow">
+                  <label for="color1">Black and Yellow</label><br>
+                  <input type="radio" id="color2" name="color" value="pink and black">
+                  <label for="color2">Pink and Black</label><br>
+                  <input type="radio" id="color3" name="color" value="red and blue">
+                  <label for="color3">Red and Blue</label>
+              </div>
+          </div>
+          
+          <div class="question">
+              <p>2. Who is the leader of bees?</p>
+              <div class="answer">
+                  <input type="radio" id="leader1" name="leader" value="queen">
+                  <label for="leader1">Queen</label><br>
+                  <input type="radio" id="leader2" name="leader" value="worker">
+                  <label for="leader2">Worker</label><br>
+                  <input type="radio" id="leader3" name="leader" value="builder">
+                  <label for="leader3">Builder</label>
+              </div>
+          </div>
+
+          <div class="question">
+              <p>3. What is the odd one out?</p>
+              <div class="answer">
+                  <input type="radio" id="odd1" name="odd" value="Queenbee">
+                  <label for="odd1">Queen bee</label><br>
+                  <input type="radio" id="odd2" name="odd" value="drone bee">
+                  <label for="odd2">Drone bee</label><br>
+                  <input type="radio" id="odd3" name="odd" value="sleepy bee">
+                  <label for="odd3">Sleepy bee</label>
+              </div>
+          </div>
+
+          <div class="question">
+              <p>4. How do Honeybees communicate?</p>
+              <div class="answer">
+                  <input type="radio" id="comm1" name="comm" value="sleeping">
+                  <label for="comm1">Sleeping</label><br>
+                  <input type="radio" id="comm2" name="comm" value="Waggle dance">
+                  <label for="comm2">Waggle dance</label><br>
+                  <input type="radio" id="comm3" name="comm" value="fighting">
+                  <label for="comm3">Fighting</label>
+              </div>
+          </div>
+
+          <div class="question">
+              <p>5. What threats do bees face?</p>
+              <div class="answer">
+                  <input type="radio" id="threat1" name="threat" value="being overjoyed">
+                  <label for="threat1">Being overjoyed</label><br>
+                  <input type="radio" id="threat2" name="threat" value="being sad">
+                  <label for="threat2">Being sad</label><br>
+                  <input type="radio" id="threat3" name="threat" value="climate change">
+                  <label for="threat3">Climate change</label>
+              </div>
+          </div>
+
+          <input type="submit" value="Submit">
+      </form>
+
+      <!-- Display score here -->
+      <div id="scoreDisplay"></div>
+  </main>
+
+
+<footer>
+  <p>&copy; 2024 Bees Web Page</p>
+</footer>
+
+</body>
+
+<script src="script1.js"></script>
+</html>

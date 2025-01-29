@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid yellow;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(157, 157, 39);
+    border: 7px solid #665305;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #4f4b30;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    background-color: #b8bb0a;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2f2d22;
+}
+
+main {
+    border-top: 2px solid #e0e0e0;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    margin-left: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    header {
+        padding: 10px;
+    }
+  
+    header h1 {
+        font-size: 24px;
+    }
+  
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+  
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Styles for phones and smaller screens */
+    header h1 {
+        font-size: 20px;
+    }
+  
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+  
+    nav ul li a {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+  }
+  
+    
